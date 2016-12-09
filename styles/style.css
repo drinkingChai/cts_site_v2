@@ -1,0 +1,36 @@
+/* Reset */
+html, body, h1, h2,
+h3, p, ol, ul, li, a {
+    padding: 0;
+    border: 0;
+    margin: 0; }
+
+/* Style guide */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+p, nav.navbar {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+
+
+/*************/
+main.container-fluid {
+  padding-left: 13.63636%;
+  padding-right: 13.63636%;
+}
