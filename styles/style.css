@@ -30,7 +30,56 @@ h2 {
 
 
 /*************/
-main.container-fluid {
-  padding-left: 13.63636%;
-  padding-right: 13.63636%;
+.features {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.splash {
+  height: 60vh;
+  position: relative;
+  background: /* top, transparent red, faked with gradient */
+    linear-gradient( hsla(0, 0%, 0%, 0.80), hsla(240, 100%, 30%, 0.65) ),
+    /* bottom, image */
+    url('../assets/images/parallax1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mission {
+  background:/* top, transparent red, faked with gradient */
+    linear-gradient( hsla(0, 0%, 0%, 0.80), hsla(240, 0%, 30%, 0.65) ),
+    /* bottom, image */
+    url('../assets/images/parallax2.jpg');
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.splash,
+.mission,
+nav.navbar a {
+  color: hsl(0, 0%, 90%);
+}
+
+.splash h1,
+.splash h2 {
+  text-align: center;
+  position: relative;
+  top: 45%;
+}
+
+.features,
+.mission {
+  height: 30vh;
+}
+
+nav.navbar {
+  background-color: #024959;
+  border-radius: 0;
+  margin: 0;
 }
