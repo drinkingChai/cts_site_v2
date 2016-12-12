@@ -15,7 +15,8 @@ body {
   line-height: 1.5em;
 }
 
-p, nav.navbar {
+p,
+nav.navbar {
   font-size: 1em;
 }
 
@@ -27,16 +28,86 @@ h2 {
   font-size: 2em;
 }
 
-
+h3 {
+  font-size: 1.5em;
+}
 
 /*************/
 .features {
   max-width: 992px;
   margin: 0 auto;
+  margin-top: 3.35570%;
+  margin-bottom: 3.35570%;
+  position: relative;
+  min-height: 25vh;
+}
+
+.features ul {
+  list-style-type: none;
+}
+
+.features i.fa {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+
+.features .feat {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.0081%;
+  transition: padding 100ms;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.feat:nth-child(2) {
+  left: 33%;
+}
+
+.feat:last-child {
+  left: 66%;
+}
+
+.feat:hover {
+  padding: 0.50403%;
+}
+
+.feat,
+.feat:hover,
+.feat:focus,
+.feat:active,
+.feat:visited {
+  color: hsl(0, 0%, 95%);
+  /*color: hsl(0, 0%, 0%);*/
+}
+
+.feat section:hover {
+  background-color: #A1E8D9;
+}
+
+.features section {
+  height: 100%;
+  padding: 8.33333%;
+  border: solid 1px hsl(0, 0%, 90%);
+  /*border-radius: 2%;*/
+}
+
+.feat:first-child section {
+  background-color: #037E8C;
+}
+.feat:nth-child(2) section {
+  background-color: #D94C27;
+}
+.feat:last-child section {
+  background-color: #024959;
 }
 
 .splash {
-  height: 60vh;
+  height: 50vh;
   position: relative;
   background: /* top, transparent red, faked with gradient */
     linear-gradient( hsla(0, 0%, 0%, 0.80), hsla(240, 100%, 30%, 0.65) ),
@@ -49,6 +120,7 @@ h2 {
 }
 
 .mission {
+  position: relative;
   background:/* top, transparent red, faked with gradient */
     linear-gradient( hsla(0, 0%, 0%, 0.80), hsla(240, 0%, 30%, 0.65) ),
     /* bottom, image */
@@ -58,6 +130,13 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.mission p {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
 }
 
 .splash,
@@ -73,13 +152,44 @@ nav.navbar a {
   top: 45%;
 }
 
-.features,
+/*.features,*/
 .mission {
-  height: 30vh;
+  height: 25vh;
 }
 
 nav.navbar {
   background-color: #024959;
   border-radius: 0;
   margin: 0;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  padding: 2.08333% 0.69444%;
+  background-color: #5f5448;
+}
+
+footer .row:last-child {
+  margin-top: 10px;
+}
+
+footer,
+footer a {
+  color: hsl(0, 0%, 90%);
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+.social {
+  height: 100%;
+  position: relative;
+  top: 50%;
+}
+
+footer i.fa {
+  font-size: 1.5em;
+  margin-right: 5px;
 }
