@@ -29,88 +29,16 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 /*************/
-.features {
-  max-width: 992px;
-  margin: 0 auto;
-  margin-top: 3.35570%;
-  margin-bottom: 3.35570%;
-  position: relative;
-  min-height: 25vh;
-}
-
-.features ul {
-  list-style-type: none;
-}
-
-.features i.fa {
-  font-size: 5em;
-  margin-bottom: 20px;
-}
-
-.features .feat {
-  width: 33%;
-  display: inline-block;
-  vertical-align: top;
-  padding: 1.0081%;
-  transition: padding 100ms;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  text-decoration: none;
-  text-align: center;
-}
-
-.feat:nth-child(2) {
-  left: 33%;
-}
-
-.feat:last-child {
-  left: 66%;
-}
-
-.feat:hover {
-  padding: 0.50403%;
-}
-
-.feat,
-.feat:hover,
-.feat:focus,
-.feat:active,
-.feat:visited {
-  color: hsl(0, 0%, 95%);
-  /*color: hsl(0, 0%, 0%);*/
-}
-
-.feat section:hover {
-  background-color: #A1E8D9;
-}
-
-.features section {
-  height: 100%;
-  padding: 8.33333%;
-  border: solid 1px hsl(0, 0%, 90%);
-  /*border-radius: 2%;*/
-}
-
-.feat:first-child section {
-  background-color: #037E8C;
-}
-.feat:nth-child(2) section {
-  background-color: #D94C27;
-}
-.feat:last-child section {
-  background-color: #024959;
-}
-
 .splash {
   height: 50vh;
   position: relative;
   background: /* top, transparent red, faked with gradient */
-    linear-gradient( hsla(0, 0%, 0%, 0.80), hsla(240, 100%, 30%, 0.65) ),
+    linear-gradient( hsla(0, 0%, 0%, 0.80), hsla(240, 0%, 0%, 0.65) ),
     /* bottom, image */
     url('../assets/images/parallax1.jpg');
     background-attachment: fixed;
@@ -121,22 +49,72 @@ h3 {
 
 .mission {
   position: relative;
+  background-color: #5f5448;
+  /*background-color: rgb(66, 133, 244);*/
+
+
+}
+
+.mission p {
+  top: 30%;
+}
+
+.main-feature {
+  height: 60vh;
   background:/* top, transparent red, faked with gradient */
     linear-gradient( hsla(0, 0%, 0%, 0.80), hsla(240, 0%, 30%, 0.65) ),
     /* bottom, image */
     url('../assets/images/parallax2.jpg');
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: hsl(0, 0%, 95%);
 }
 
+.main-feature h2,
+.main-feature p,
 .mission p {
   max-width: 700px;
   margin: 0 auto;
   position: relative;
+}
+
+.main-feature h2 {
+  margin-bottom: 20px;
+}
+.main-feature h2,
+.main-feature p {
   top: 30%;
+}
+
+.features {
+  height: 30vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.feat-thumb {
+  text-align: center;
+  /*border: solid 1px hsl(0, 0%, 80%);*/
+  width: 33%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 60px;
+}
+
+.feat-thumb:nth-child(2) {
+  left: 33%;
+}
+.feat-thumb:last-child {
+  left: 66%;
+}
+
+.feat-thumb i.fa {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .splash,
@@ -158,7 +136,7 @@ nav.navbar a {
 }
 
 nav.navbar {
-  background-color: #024959;
+  background-color: #37474F;
   border-radius: 0;
   margin: 0;
 }
@@ -167,7 +145,8 @@ footer {
   position: relative;
   text-align: center;
   padding: 2.08333% 0.69444%;
-  background-color: #5f5448;
+  background-color: #263238;
+
 }
 
 footer .row:last-child {
