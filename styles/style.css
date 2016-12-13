@@ -47,11 +47,51 @@ h3 {
 }
 
 .base {
-  height: 40vh;
+  height: 10vh;
   border-bottom: solid 5px hsl(0, 0%, 80%);
+  position: relative;
+}
+.cloud,
+.comm {
+  height: 10vh;
+  position: relative;
 }
 
-.base div.col-md-2:first-child,
-.base div.col-md-2:nth-child(2) {
+.cloud .container,
+.comm .container,
+.base .container {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+}
+
+main i {
   text-align: right;
+}
+
+.cloud div.col-md-1,
+.comm div.col-md-1,
+.base div.col-md-1,
+.cloud div.col-md-2,
+.comm div.col-md-2,
+.base div.col-md-2 {
+  height: 80px;
+  position: relative;
+}
+
+.cloud div.col-md-1 >i,
+.comm div.col-md-1 >i,
+.base div.col-md-1 >i,
+.cloud div.col-md-2 > i,
+.comm div.col-md-2 > i,
+.base div.col-md-2 > i {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.base div.col-md-2:last-child > i:first-child {
+  left: 10%;
+}
+.base div.col-md-2:last-child > i:last-child {
+  left: 43%;
 }
