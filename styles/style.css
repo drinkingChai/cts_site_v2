@@ -30,21 +30,27 @@ h2 {
 
 h3 {
   font-size: 1em;
-  font-weight: bold;
 }
 
 /*************/
 .splash {
-  height: 50vh;
+  height: 100vh;
   position: relative;
-  background: /* top, transparent red, faked with gradient */
-    linear-gradient( hsla(0, 0%, 0%, 0.80), hsla(240, 0%, 0%, 0.65) ),
-    /* bottom, image */
-    url('../assets/images/parallax1.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #3F51B5;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.splash h3 {
+  padding-top: 10vh;
+}
+
+.splash .fa-angle-double-down {
+  padding-top: 5vh;
+}
+
+.splash a {
+  color: inherit;
 }
 
 .mission {
@@ -57,19 +63,6 @@ h3 {
 
 .mission p {
   top: 30%;
-}
-
-.main-feature {
-  height: 60vh;
-  background:/* top, transparent red, faked with gradient */
-    linear-gradient( hsla(0, 0%, 0%, 0.80), hsla(240, 0%, 30%, 0.65) ),
-    /* bottom, image */
-    url('../assets/images/parallax2.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: hsl(0, 0%, 95%);
 }
 
 .main-feature h2,
@@ -88,33 +81,10 @@ h3 {
   top: 30%;
 }
 
-.features {
-  height: 30vh;
+.features,
+.features-2 {
   margin: 0 auto;
   position: relative;
-}
-
-.feat-thumb {
-  text-align: center;
-  /*border: solid 1px hsl(0, 0%, 80%);*/
-  width: 33%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 60px;
-}
-
-.feat-thumb:nth-child(2) {
-  left: 33%;
-}
-.feat-thumb:last-child {
-  left: 66%;
-}
-
-.feat-thumb i.fa {
-  font-size: 2em;
-  margin-bottom: 20px;
 }
 
 .splash,
@@ -123,20 +93,9 @@ nav.navbar a {
   color: hsl(0, 0%, 90%);
 }
 
-.splash h1,
-.splash h2 {
-  text-align: center;
-  position: relative;
-  top: 45%;
-}
-
 /*.features,*/
-.mission {
-  height: 25vh;
-}
-
 nav.navbar {
-  background-color: #37474F;
+  /*background-color: #37474F;*/
   border-radius: 0;
   margin: 0;
 }
