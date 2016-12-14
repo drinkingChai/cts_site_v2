@@ -53,42 +53,33 @@ h3 {
   color: inherit;
 }
 
-.mission {
-  position: relative;
-  background-color: #5f5448;
-  /*background-color: rgb(66, 133, 244);*/
-
-
-}
-
-.mission p {
-  top: 30%;
-}
-
-.main-feature h2,
-.main-feature p,
-.mission p {
-  max-width: 700px;
+.services {
   margin: 0 auto;
-  position: relative;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.main-feature h2 {
-  margin-bottom: 20px;
-}
-.main-feature h2,
-.main-feature p {
-  top: 30%;
+.service-icon {
+  background-color: #68530F;
+  color: hsl(0, 0%, 95%);
+  font-size: 5em;
+  border: solid 10px #B5993F;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
-.features,
-.features-2 {
-  margin: 0 auto;
-  position: relative;
+.services .col-md-4:last-child .service-icon {
+  padding-left: 0px;
 }
+
 
 .splash,
-.mission,
 nav.navbar a {
   color: hsl(0, 0%, 90%);
 }
