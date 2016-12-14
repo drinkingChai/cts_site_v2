@@ -54,7 +54,6 @@ h3 {
 }
 
 .services {
-  margin: 0 auto;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -72,10 +71,17 @@ h3 {
   margin-right: auto;
   margin-bottom: 30px;
   padding: 10px;
+  box-shadow: 0 0 10px hsl(0, 0%, 50%);
 }
 
 .services .col-md-4:last-child .service-icon {
   padding-left: 0px;
+}
+
+.services,
+.serv,
+.about {
+  margin: 100px auto;
 }
 
 
