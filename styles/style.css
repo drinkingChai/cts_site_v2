@@ -55,8 +55,6 @@ h3 {
 
 .services {
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .service-icon {
@@ -88,6 +86,28 @@ h3 {
 .splash,
 nav.navbar a {
   color: hsl(0, 0%, 90%);
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.section-header ul {
+  list-style-type: none;
+}
+.section-header ul li {
+  display: inline;
+}
+.section-header ul li:nth-child(2) {
+  font-size: 2.2em;
+}
+.section-line {
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  display: inline-block;
+  margin-bottom: 0.6em;
 }
 
 /*.features,*/
