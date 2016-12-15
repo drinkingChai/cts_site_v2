@@ -91,19 +91,20 @@ nav.navbar a {
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 5.97609%;
 }
 .section-header ul {
   list-style-type: none;
 }
 .section-header ul li {
   display: inline;
+  margin-right: 2.00803%;
 }
 .section-header ul li:nth-child(2) {
   font-size: 2.2em;
 }
 .section-line {
-  width: 100px;
+  width: 10.04016%;
   height: 2px;
   background-color: #000;
   display: inline-block;
