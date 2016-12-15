@@ -15,6 +15,10 @@ body {
   line-height: 1.5em;
 }
 
+p {
+  margin-bottom: 1.5em;
+}
+
 p,
 nav.navbar {
   font-size: 1em;
@@ -30,6 +34,7 @@ h2 {
 
 h3 {
   font-size: 1em;
+  font-weight: bold;
 }
 
 /*************/
@@ -62,35 +67,72 @@ h3 {
   text-align: center;
 }
 
+
 .service-icon {
-  background-color: #782A2B;
+  /*background-color: #782A2B;*/
   color: hsl(0, 0%, 95%);
   font-size: 5em;
-  border: solid 10px #F85659;
+  border: solid 10px;
   border-radius: 100%;
   width: 120px;
   height: 120px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
   padding: 10px;
   box-shadow: 0 0 10px hsl(0, 50%, 50%);
   /*box-shadow: 0 0 10px hsl(0, 0%, 50%);*/
   background-color: #8C3582;
   border-color: #C249B4;
-  box-shadow: 0 0 10px hsl(300, 50%, 50%);
+  /*box-shadow: 0 0 10px hsl(300, 50%, 50%);*/
+  box-shadow: 0 0 5px hsl(300, 50%, 10%);
 }
 
-.services .col-md-4:last-child .service-icon {
-  padding-left: 0px;
+.services a {
+  background-color: #8C3582;
+  box-shadow: 0 0 5px hsl(300, 50%, 10%);
+  padding: 10px 20px;
+  color: inherit;
+}
+
+.services a:hover,
+.services a:focus {
+  background-color: #C249B4;
+  color: inherit;
+}
+
+
+.services p,
+.service-icon {
+  margin-bottom: 30px;
 }
 
 .services,
 .serv,
 .about {
-  margin: 100px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.services > div,
+.serv > div,
+.services,
+.serv,
+.about {
+  /*margin-top: 4.89716%;*/
+  margin-top: 3.18471%;
+  margin-bottom: 4.89716%;
+}
+
+.services {
+}
+
+.serv {
+  margin-bottom: 0;
+}
+
+.services .col-md-4:last-child .service-icon {
+  padding-left: 0px;
+}
 
 .splash,
 nav.navbar a {
@@ -120,6 +162,10 @@ nav.navbar a {
   margin-bottom: 0.6em;
 }
 
+.services-container .section-line {
+  background-color: hsl(0, 0%, 90%);
+}
+
 /*.features,*/
 nav.navbar {
   /*background-color: #37474F;*/
@@ -135,7 +181,7 @@ footer {
 
 }
 
-footer .row:last-child {
+footer .row:nth-child(n+1) {
   margin-top: 10px;
 }
 
