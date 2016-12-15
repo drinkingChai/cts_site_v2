@@ -53,15 +53,20 @@ h3 {
   color: inherit;
 }
 
+.services-container {
+  background-color: #333333;
+  color: hsl(0, 0%, 90%);
+}
+
 .services {
   text-align: center;
 }
 
 .service-icon {
-  background-color: #68530F;
+  background-color: #782A2B;
   color: hsl(0, 0%, 95%);
   font-size: 5em;
-  border: solid 10px #B5993F;
+  border: solid 10px #F85659;
   border-radius: 100%;
   width: 120px;
   height: 120px;
@@ -69,7 +74,11 @@ h3 {
   margin-right: auto;
   margin-bottom: 30px;
   padding: 10px;
-  box-shadow: 0 0 10px hsl(0, 0%, 50%);
+  box-shadow: 0 0 10px hsl(0, 50%, 50%);
+  /*box-shadow: 0 0 10px hsl(0, 0%, 50%);*/
+  background-color: #8C3582;
+  border-color: #C249B4;
+  box-shadow: 0 0 10px hsl(300, 50%, 50%);
 }
 
 .services .col-md-4:last-child .service-icon {

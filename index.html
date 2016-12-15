@@ -17,10 +17,10 @@
         <a href="#" class="navbar-brand">Charter TS</a>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#serv-erate">E-Rate</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#services-header">Services</a></li>
+          <li><a href="#serv-erate-header">E-Rate</a></li>
+          <li><a href="#about-header">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -30,52 +30,59 @@
         <h1>Charter Technology Solutions</h1>
         <h2>Managed, Reliable IT services for Education and Businesses</h2>
         <h3>What We Do</h3>
-        <a href="#services"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a>
+        <a href="#services-header"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a>
       </div>
 
-      <div class="section-header" id="services">
-        <ul>
-          <li><div class="section-line"></div></li>
-          <li>Services</li>
-          <li><div class="section-line"></div></li>
-        </ul>
+
+      <!-- Services -->
+      <div class="services-container container-fluid row">
+        <div class="section-header" id="services-header">
+          <ul>
+            <li><div class="section-line"></div></li>
+            <li>Services</li>
+            <li><div class="section-line"></div></li>
+          </ul>
+        </div>
+
+        <div class="row services container">
+          <div class="col-md-4">
+            <figure class="service-icon">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </figure>
+
+            <h3>Network</h3>
+            <p>Internet and network support with 24/7 maintenance</p>
+            <a href="#serv-network-header" class="btn btn-default">More info</a>
+          </div>
+
+          <div class="col-md-4">
+            <figure class="service-icon">
+              <i class="fa fa-file-word-o" aria-hidden="true"></i>
+              <!-- <i class="fa fa-file-excel-o" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> -->
+            </figure>
+
+            <h3>Office Package</h3>
+            <p>Office Web Apps, web conferencing, and file sharing</p>
+            <a href="#serv-office-header" class="btn btn-default">More info</a>
+          </div>
+
+          <div class="col-md-4">
+            <figure class="service-icon">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </figure>
+
+            <h3>E-Rate</h3>
+            <p>Registered service provider under the USAC program</p>
+            <a href="#serv-erate-header" class="btn btn-default">More info</a>
+          </div>
+        </div>
+
       </div>
 
-      <div class="row services container">
-        <div class="col-md-4">
-          <figure class="service-icon">
-            <i class="fa fa-globe" aria-hidden="true"></i>
-          </figure>
 
-          <h3>Network</h3>
-          <p>Internet and network support with 24/7 maintenance</p>
-          <a href="#serv-network" class="btn btn-default">More info</a>
-        </div>
-
-        <div class="col-md-4">
-          <figure class="service-icon">
-            <i class="fa fa-file-word-o" aria-hidden="true"></i>
-            <!-- <i class="fa fa-file-excel-o" aria-hidden="true"></i> -->
-            <!-- <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> -->
-          </figure>
-
-          <h3>Office Package</h3>
-          <p>Office Web Apps, web conferencing, and file sharing</p>
-          <a href="#serv-office" class="btn btn-default">More info</a>
-        </div>
-
-        <div class="col-md-4">
-          <figure class="service-icon">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-          </figure>
-
-          <h3>E-Rate</h3>
-          <p>Registered service provider under the USAC program</p>
-          <a href="#serv-erate" class="btn btn-default">More info</a>
-        </div>
-      </div>
-
-      <div class="section-header" id="serv-network">
+      <!-- Network services -->
+      <div class="section-header" id="serv-network-header">
         <ul>
           <li><div class="section-line"></div></li>
           <li>Network</li>
@@ -118,7 +125,9 @@
         </div>
       </div>
 
-      <div class="section-header" id="serv-office">
+
+      <!-- Office services -->
+      <div class="section-header" id="serv-office-header">
         <ul>
           <li><div class="section-line"></div></li>
           <li>Office Package</li>
@@ -143,7 +152,9 @@
         </div>
       </div>
 
-      <div class="section-header" id="serv-erate">
+
+      <!-- Erate -->
+      <div class="section-header" id="serv-erate-header">
         <ul>
           <li><div class="section-line"></div></li>
           <li>E-Rate</li>
@@ -159,7 +170,9 @@
         </div>
       </div>
 
-      <div class="section-header" id="about">
+
+      <!-- About -->
+      <div class="section-header" id="about-header">
         <ul>
           <li><div class="section-line"></div></li>
           <li>About Us</li>
@@ -174,6 +187,8 @@
         </div>
       </div>
 
+
+      <!-- Placeholder for team -->
       <div class="row team container">
 
       </div>
@@ -182,7 +197,7 @@
 
 
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="row">
         <ul>
           <li><strong>Charter Technology Solutions</strong></li>
