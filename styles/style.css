@@ -51,7 +51,10 @@ h3 {
 }
 
 .splash .fa-angle-double-down {
-  padding-top: 5vh;
+  padding-top: 30vh;
+  animation: pulse .8s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
 }
 
 .splash a {
@@ -123,15 +126,18 @@ h3 {
   margin-bottom: 4.89716%;
 }
 
-.services {
-}
-
 .serv {
   margin-bottom: 0;
 }
 
 .services .col-md-4:last-child .service-icon {
   padding-left: 0px;
+}
+
+.serv-erate-container,
+.serv-about-container {
+  background-color: #2C3E50;
+  color: hsl(0, 0%, 95%);
 }
 
 .splash,
@@ -162,22 +168,29 @@ nav.navbar a {
   margin-bottom: 0.6em;
 }
 
-.services-container .section-line {
+.services-container .section-line,
+.serv-erate-container .section-line,
+.serv-about-container .section-line {
   background-color: hsl(0, 0%, 90%);
 }
 
 /*.features,*/
 nav.navbar {
   /*background-color: #37474F;*/
+  background-color: #3F51B5;
   border-radius: 0;
   margin: 0;
+}
+
+nav.navbar ul li a:hover {
+  background-color: #3D78CC;
 }
 
 footer {
   position: relative;
   text-align: center;
   padding: 2.08333% 0.69444%;
-  background-color: #263238;
+  background-color: #333333;
 
 }
 
@@ -203,4 +216,13 @@ footer ul {
 footer i.fa {
   font-size: 1.5em;
   margin-right: 5px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
