@@ -201,13 +201,17 @@ nav.navbar ul li a:hover {
 footer {
   position: relative;
   text-align: center;
-  padding: 5.97609% 0.69444%;
+  padding: 5.97609% 0.69444% 0 0.69444%;
   background-color: #333333;
 
 }
 
-footer .row:nth-child(n+1) {
+footer .row:nth-child(2) {
   margin-top: 10px;
+}
+
+footer .row:last-child {
+  margin-top: 50px;
 }
 
 footer,
@@ -255,5 +259,17 @@ footer i.fa {
 @media only screen and (max-width: 450px) {
   .splash {
     padding-top: 20vh;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .services-container .services {
+    margin-top: 6.96379%;
+  }
+  .services > div {
+    margin-bottom: 10.30928%;
+  }
+  .section-header {
+    padding-top: 13.92758%;
   }
 }
