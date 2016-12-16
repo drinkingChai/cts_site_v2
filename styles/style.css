@@ -46,6 +46,10 @@ h3 {
   padding-top: 40vh;
 }
 
+.splash h2 {
+  margin-top: 1.04822%;
+}
+
 .splash h3 {
   padding-top: 10vh;
 }
@@ -186,6 +190,10 @@ nav.navbar {
   margin: 0;
 }
 
+nav.navbar span.icon-bar {
+  background-color: hsl(0, 0%, 90%)
+}
+
 nav.navbar ul li a:hover {
   background-color: #3D78CC;
 }
@@ -228,5 +236,24 @@ footer i.fa {
   }
   100% {
     transform: scale(1.2);
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .splash .fa-angle-double-down {
+    padding-top: 20vh;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .splash {
+    padding-right: 3.92157%;
+    padding-left: 3.92157%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .splash {
+    padding-top: 20vh;
   }
 }
