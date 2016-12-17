@@ -44,6 +44,7 @@ h3 {
   background-color: #3F51B5;
   text-align: center;
   padding-top: 40vh;
+  box-shadow: 0 1px 15px 5px hsl(0, 0%, 15%);
 }
 
 .splash h2 {
@@ -66,7 +67,8 @@ h3 {
 }
 
 .services-container {
-  background-color: #333333;
+  /*background-color: #333333;*/
+  background-color: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 90%);
 }
 
@@ -79,31 +81,38 @@ h3 {
   /*background-color: #782A2B;*/
   color: hsl(0, 0%, 95%);
   font-size: 5em;
-  border: solid 10px;
+  /*border: solid 10px;*/
   border-radius: 100%;
   width: 120px;
   height: 120px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0 0 10px hsl(0, 50%, 50%);
   /*box-shadow: 0 0 10px hsl(0, 0%, 50%);*/
-  background-color: #8C3582;
-  border-color: #C249B4;
+  background-color: hsla(216, 80%, 40%, 1);
+  /*border-color: hsla(216, 50%, 50%, 1);*/
+  /*border-color: hsl(190, 80%, 30%);*/
+  /*background-color: #8C3582;*/
+  /*border-color: #C249B4;*/
   /*box-shadow: 0 0 10px hsl(300, 50%, 50%);*/
-  box-shadow: 0 0 5px hsl(300, 50%, 10%);
+  box-shadow: 0 2px 5px 1px hsl(190, 50%, 10%);
 }
 
 .services a {
-  background-color: #8C3582;
-  box-shadow: 0 0 5px hsl(300, 50%, 10%);
+  /*background-color: #8C3582;
+  background-color: hsl(170, 70%, 20%);*/
+  background-color: hsla(216, 80%, 40%, 1);
+  box-shadow: 0 2px 5px hsl(170, 50%, 10%);
   padding: 10px 20px;
   color: inherit;
 }
 
 .services a:hover,
 .services a:focus {
-  background-color: #C249B4;
+  /*background-color: #C249B4;
+  background-color: hsl(170, 80%, 30%);*/
+  background-color: hsla(216, 80%, 50%, 1);
   color: inherit;
 }
 
@@ -135,13 +144,27 @@ h3 {
 }
 
 .services .col-md-4:last-child .service-icon {
-  padding-left: 0px;
+  padding-left: 10px;
+}
+
+.serv-network-container,
+.serv-office-container {
+  background-color: hsl(0, 0%, 85%);
 }
 
 .serv-erate-container,
 .serv-about-container {
   background-color: #2C3E50;
   color: hsl(0, 0%, 95%);
+}
+
+.serv-network-container {
+  /* Inset shadows on one side from: http://stackoverflow.com/questions/17572619/inset-box-shadow-only-on-one-side */
+  box-shadow: inset 0 11px 9px -7px hsl(0, 0%, 8%);
+}
+footer,
+.serv-erate-container {
+  box-shadow: inset 0 9px 9px -7px hsl(0, 0%, 15%);
 }
 
 .splash,
@@ -194,7 +217,8 @@ nav.navbar span.icon-bar {
   background-color: hsl(0, 0%, 90%)
 }
 
-nav.navbar ul li a:hover {
+nav.navbar ul li a:hover,
+nav.navbar ul li a:focus {
   background-color: #3D78CC;
 }
 

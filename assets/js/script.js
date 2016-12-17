@@ -4,10 +4,10 @@ $(window).scroll(function(event){
    var st = $(this).scrollTop();
    if (st > lastScrollTop){
        // downscroll code
-       $("nav").fadeOut();
+       $("nav").hide();
    } else {
       // upscroll code
-      $("nav").fadeIn();
+      $("nav").show();
    }
    lastScrollTop = st;
 });
