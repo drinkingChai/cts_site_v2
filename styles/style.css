@@ -13,6 +13,7 @@ html {
 body {
   font-size: 100%;
   line-height: 1.5em;
+  font-family: 'Lato', sans-serif;
 }
 
 p {
@@ -35,6 +36,10 @@ h2 {
 h3 {
   font-size: 1em;
   font-weight: bold;
+}
+
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
 }
 
 /*************/
@@ -203,6 +208,7 @@ nav.navbar a {
 }
 .section-header ul li:nth-child(2) {
   font-size: 2.2em;
+  font-family: 'Roboto Slab', serif;
 }
 .section-line {
   width: 10.04016%;
@@ -320,6 +326,7 @@ footer i.fa {
     margin-bottom: 10.30928%;
   }
   .section-header {
-    padding-top: 13.92758%;
+    /*padding-top: 13.92758%;*/
+    padding-top: 10.92758%;
   }
 }
