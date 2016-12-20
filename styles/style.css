@@ -40,3 +40,42 @@ h3 {
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
 }
+
+/**/
+header,
+main > .row {
+  height: 50vh;
+}
+
+footer {
+  height: 20vh;
+}
+
+/*.panel-one {
+  background-image: url('../assets/images/cover2.jpg');
+  background-position: left center;
+  background-size: cover;
+  height: 50vh;
+  background-attachment: fixed;
+}*/
+
+.services-preview,
+.contact {
+  background-color: hsl(50, 100%, 70%);
+}
+
+.networking {
+  background-color: hsl(30, 100%, 60%);
+}
+
+.office {
+  background-color: hsl(195, 80%, 70%);
+}
+
+.about {
+  background-color: hsl(0, 0%, 80%);
+}
+
+footer {
+  background-color: hsl(0, 10%, 30%);
+}
