@@ -1,17 +1,3 @@
-// snippet from: http://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
-var lastScrollTop = 0;
-$(window).scroll(function(event){
-   var st = $(this).scrollTop();
-   if (st > lastScrollTop){
-       // downscroll code
-       $("nav").hide();
-   } else {
-      // upscroll code
-      $("nav").show();
-   }
-   lastScrollTop = st;
-});
-
 $(".navbar-collapse a").on('click', function(){
   if ($(".navbar-collapse").attr("aria-expanded")) {
     $(".navbar-toggle").click();
@@ -19,10 +5,16 @@ $(".navbar-collapse a").on('click', function(){
   // Reference: http://stackoverflow.com/questions/16680543/hide-twitter-bootstrap-nav-collapse-on-click
 });
 
-$(".navbar-collapse a, .services a, .splash a").on('click', function() {
+$(".navbar-collapse a, .services a, .splash a, .navbar-header a").on('click', function() {
   // Reference: http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
   // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
+  if (this.hash == "") {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+    console.log('test');
+  } else {
     // Prevent default anchor click behavior
     event.preventDefault();
 
@@ -33,7 +25,7 @@ $(".navbar-collapse a, .services a, .splash a").on('click', function() {
     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
     $('html, body').animate({
       scrollTop: $(hash).offset().top
-    }, 800, function(){
+    }, 500, function(){
 
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
