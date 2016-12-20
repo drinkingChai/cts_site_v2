@@ -86,32 +86,29 @@ h1, h2 {
 .service-icon {
   /*background-color: #782A2B;*/
   color: hsl(0, 0%, 95%);
-  font-size: 5em;
+  font-size: 6em;
   /*border: solid 10px;*/
   border-radius: 100%;
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
-  box-shadow: 0 0 10px hsl(0, 50%, 50%);
-  /*box-shadow: 0 0 10px hsl(0, 0%, 50%);*/
-  background-color: hsla(216, 80%, 40%, 1);
-  /*border-color: hsla(216, 50%, 50%, 1);*/
-  /*border-color: hsl(190, 80%, 30%);*/
-  /*background-color: #8C3582;*/
-  /*border-color: #C249B4;*/
-  /*box-shadow: 0 0 10px hsl(300, 50%, 50%);*/
-  box-shadow: 0 2px 5px 1px hsl(190, 50%, 10%);
+  padding: 25px;
+  /*background-color: hsla(216, 80%, 40%, 1);*/
+  /*background-color: hsla(216, 80%, 40%, 1);*/
+  /*box-shadow: 0 2px 5px 1px hsl(190, 50%, 10%);*/
 }
 
 .services a {
   /*background-color: #8C3582;
   background-color: hsl(170, 70%, 20%);*/
-  background-color: hsla(216, 80%, 40%, 1);
-  box-shadow: 0 2px 5px hsl(170, 50%, 10%);
+  /*background-color: hsla(216, 80%, 40%, 1);*/
+  background-color: hsla(0, 0%, 90%, 1);
+  /*box-shadow: 0 2px 5px hsl(170, 50%, 10%);*/
   padding: 10px 20px;
-  color: inherit;
+  border-radius: 0;
+  color: hsl(0, 0%, 10%);
+  /*color: inherit;*/
 }
 
 .services a:hover,
@@ -120,6 +117,22 @@ h1, h2 {
   background-color: hsl(170, 80%, 30%);*/
   background-color: hsla(216, 80%, 50%, 1);
   color: inherit;
+}
+
+.network-preview .fa {
+  color: hsl(150, 60%, 50%);
+  /*background-color: hsl(160, 60%, 50%);*/
+  /*padding: 40px;*/
+}
+.office-preview .fa {
+  color: hsl(240, 70%, 70%);
+  /*background-color: hsl(240, 40%, 50%);*/
+  /*padding: 40px;*/
+}
+.erate-preview .fa {
+  color: hsl(350, 60%, 55%);
+  /*background-color: hsl(350, 30%, 35%);*/
+  /*padding: 40px;*/
 }
 
 
@@ -150,7 +163,7 @@ h1, h2 {
 }
 
 .services .col-md-4:last-child .service-icon {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .serv-network-container,
@@ -233,7 +246,6 @@ nav.navbar a {
 nav.navbar {
   /*background-color: #37474F;*/
   background-color: #3F51B5;
-  border-radius: 0;
   margin: 0;
 }
 
