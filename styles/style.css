@@ -42,9 +42,15 @@ h1, h2, h3 {
 }
 
 /**/
+nav {
+  background-color: hsl(360, 100%, 100%);
+}
+
 header,
 main > .row {
-  height: 50vh;
+  /*height: 70vh;*/
+  padding-top: 15vh;
+  padding-bottom: 15vh;
 }
 
 footer {
@@ -59,21 +65,75 @@ footer {
   background-attachment: fixed;
 }*/
 
+header,
+footer,
 .services-preview,
-.contact {
-  background-color: hsl(50, 100%, 70%);
+.services-details,
+.contact-about {
+  display: flex;
+  align-items: center;
+}
+
+header .title,
+footer p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.contact,
+.about,
+.networking,
+.office,
+.managed-it,
+.office-erate {
+  padding: 50px;
+  /*flex: auto;*/
+}
+
+.managed-it,
+.office-erate {
+  background-color: #BD4932;
+  /*background-color: hsla(14, 34%, 11%, 1);*/
+  color: hsl(0, 0%, 90%);
+}
+
+footer {
+  color: hsl(0, 0%, 90%);
+}
+
+.services-preview {
+  background-color: #FFD34E;
+  /*background-color: hsl(50, 100%, 70%);*/
+}
+
+.services-details {
+  background-color: hsl(0, 0%, 20%);
 }
 
 .networking {
-  background-color: hsl(30, 100%, 60%);
+  background-color: #FFFAD5;
+  /*background-color: hsl(30, 100%, 60%);*/
 }
 
 .office {
-  background-color: hsl(195, 80%, 70%);
+  background-color: #DB9E36;
+  /*background-color: hsl(195, 80%, 70%);*/
+  /*color: hsl(0, 0%, 90%);*/
+}
+
+.contact {
+  background-color: #BD4932;
+  color: hsl(0, 0%, 90%);
 }
 
 .about {
-  background-color: hsl(0, 0%, 80%);
+  background-color: #105B63;
+  color: hsl(0, 0%, 90%);
+  /*background-color: hsl(0, 0%, 80%);*/
 }
 
 footer {
