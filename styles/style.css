@@ -318,7 +318,8 @@ footer i.fa {
   }
   footer,
   .serv-network-container,
-  .serv-erate-container {
+  .serv-erate-container,
+  .services-container {
     padding-top: 10.30928%;
   }
   .serv-office-container,
@@ -334,14 +335,20 @@ footer i.fa {
 }
 
 @media only screen and (max-width: 991px) {
-  .services-container .services {
+  /*.services-container .services {
     margin-top: 6.96379%;
-  }
+  }*/
   .services > div {
     margin-bottom: 10.30928%;
   }
   .section-header {
     /*padding-top: 13.92758%;*/
     padding-top: 10.92758%;
+  }
+}
+
+@media only screen and (max-width: 351px) {
+  .serv-office-container .section-header .section-line {
+    display: none;
   }
 }
